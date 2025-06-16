@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Крестики-нолики на Bootstrap 5</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+        <meta
+            name="description"
+            content="Крестики-нолики, простая игра на JavaScript с Bootstrap 5 и темной темой."
+        />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <!-- Bootstrap Icons CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+    </head>
+    <body>
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center">
+                <h1>Крестики-нолики</h1>
+                <button
+                    id="theme-toggle"
+                    class="btn btn-link text-decoration-none p-0 ms-2"
+                    aria-label="Переключить тему"
+                >
+                    <i class="bi bi-sun-fill"></i>
+                </button>
+            </div>
+            <h3
+                id="status"
+                class="mb-3"
+            >
+                Ходит X
+            </h3>
+
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="board">
+                        <div class="row">
+                            <div
+                                class="cell"
+                                data-index="0"
+                            ></div>
+                            <div
+                                class="cell"
+                                data-index="1"
+                            ></div>
+                            <div
+                                class="cell"
+                                data-index="2"
+                            ></div>
+                        </div>
+                        <div class="row">
+                            <div
+                                class="cell"
+                                data-index="3"
+                            ></div>
+                            <div
+                                class="cell"
+                                data-index="4"
+                            ></div>
+                            <div
+                                class="cell"
+                                data-index="5"
+                            ></div>
+                        </div>
+                        <div class="row">
+                            <div
+                                class="cell"
+                                data-index="6"
+                            ></div>
+                            <div
+                                class="cell"
+                                data-index="7"
+                            ></div>
+                            <div
+                                class="cell"
+                                data-index="8"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 col-lg-3 d-flex flex-column align-items-start ms-md-4 mt-4 mt-md-0"
+                >
+                    <div
+                        id="results-panel"
+                        class="card w-100"
+                    >
+                        <div class="card-header">
+                            <h4 class="mb-0">Результаты Игр</h4>
+                        </div>
+                        <ul
+                            id="game-results"
+                            class="list-group list-group-flush text-start"
+                        >
+                            <!-- Результаты игр будут добавлены здесь с помощью JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                id="restart"
+                class="btn btn-primary mt-4"
+            >
+                Начать заново
+            </button>
+        </div>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigF/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+    </body>
+</html>
